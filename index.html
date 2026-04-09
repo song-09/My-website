@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Design Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1 class="logo"><img src="images/송로고.png" alt="Logo"></h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#work-list">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="resume-btn">Résumé/CV <span class="icon">↓</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="header-line"></div>
+
+<main>
+    <section class="hero-section">
+        <div class="container grid-12">
+            <article class="slogan-left">
+                <p>Think</p><p>Design</p><p>Deliver</p>
+            </article>
+
+            <article class="hero-center">
+                <div class="skills-tags">
+                    <span>UX Design</span><span>UI Design</span><span>User Research</span>
+                    <span>Prototyping</span><span>Design Systems</span><span>Motion Graphics</span>
+                </div>
+                <div class="profile-wrapper">
+                    <figure class="profile-image">
+                        <img src="images/메인프사.png" alt="Designer Portrait">
+                    </figure>
+                    <p class="vertical-text">Designing experiences that put people first.</p>
+                </div>
+            </article>
+
+            <article class="slogan-right">
+                <p>Listen</p><p>Empathize</p><p>Create</p><p>Connect</p><p>Grow</p>
+            </article>
+        </div>
+
+        <div class="portfolio-bridge">
+            <div class="portfolio-text">PORTFOLIO</div>
+            <div class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 10L12 15L17 10" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-section" id="work-list">
+        <div class="stage" id="stage">
+            <div class="carousel" id="carousel">
+                <div class="card"><a href="#"><img src="images/인천공항웹페이지 히어로캡쳐.jpg" alt="인천공항"></a></div>
+                <div class="card"><a href="#"><img src="images/쿠키맨캡쳐.jpg" alt="쿠키맨"></a></div>
+                <div class="card"><a href="#"><img src="images/함덕.jpeg" alt="함덕"></a></div>
+                <div class="card"><a href="#"><img src="images/배고파서배아파 캡쳐.jpg" alt="배고파서배아파"></a></div>
+                <div class="card"><a href="#"><img src="images/심시티 캡쳐.jpg" alt="심시티"></a></div>
+                <div class="card"><a href="#"><img src="images/질소의추억캡쳐.jpg" alt="질소의추억"></a></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="contact-section">
+            <h5>Got a project in mind? I'd love to help.</h5>
+            <form id="contact-form" class="contact-box">
+                <div class="form-align">
+                    <div class="input-box">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" required placeholder="Company name">
+                    </div>
+                    <div class="input-box">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Full name">
+                    </div>
+                </div>
+                <div class="form-align">
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Email address">
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Phone number">
+                    </div>
+                </div>
+                <div class="message-box">
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" placeholder="Tell me about your project." required></textarea>
+                </div>
+                <div class="send-btn"><button type="submit">Send</button></div>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
